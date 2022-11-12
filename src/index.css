@@ -1,13 +1,57 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+/* ::selection {
+  background-color: var(--color-component-variant1);
+} */
+img::selection {
+  background-color: transparent;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a {
+  color: none;
+}
+:root {
+  --color-bg: #05141C;
+  --color-primary: #1DA1F2;
+  --color-component: #1B2730;
+  --color-component-variant1: #28353E;
+  --color-text: #FFF;
+  --color-text-variant: #8899A6;
+  --transition: all .5s ease;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem;
+  background-color: var(--color-bg);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  margin: 0 auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+ body {
+  padding: 0 1rem;
+ }
 }

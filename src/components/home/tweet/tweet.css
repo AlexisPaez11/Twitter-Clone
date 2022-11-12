@@ -1,0 +1,98 @@
+.tweet {
+    background-color: var(--color-component);
+    display: flex;
+    flex-direction: row;
+    gap: 1.6rem;
+    padding: 1.6rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.tweet img {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.tweet > div:last-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.tweet div input {
+    width: 100%;
+    background-color: var(--color-component-variant1);
+    /* background-color: var(--color-bg); */
+    /* background-color: transparent; */
+    color: var(--color-text);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1.6rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.tweet div div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tweet .actions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.tweet .actions div {
+    padding: 1rem;
+    color: var(--color-primary);
+    font-size: 2.2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.tweet .actions div:hover {
+    cursor: pointer;
+    background-color: #1DA1F210;
+}
+
+.tweet .post-tweet {
+    padding: 1rem 1.6rem;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+    .tweet {
+      display: none;
+    }
+}

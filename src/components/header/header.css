@@ -1,0 +1,92 @@
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+header > div:first-child {
+    width: 26rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+header > div:first-child .logo,
+header > div:first-child .logo img {
+    width: 4rem;
+    height: 4rem;
+}
+
+header > div:first-child .search {
+    width: 100%;
+}
+header > div:first-child input {
+    width: 100%;
+    padding: 1rem 1.6rem;
+    background-color: var(--color-component);
+    color: var(--color-text);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    appearance: none;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+header > div:first-child input::placeholder {
+    color: var(--color-text-variant);
+    opacity: 1;
+}
+
+
+
+
+header > div:last-child {
+}
+
+header > div:last-child .user {
+    background-color: var(--color-component);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+    padding: .8rem 1.6rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+header > div:last-child .user img {
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+header > div:last-child .user p {
+    color: var(--color-text);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 700px) {
+    header .search {
+      display: none;
+    }
+    header > div:first-child {
+        width: max-content;
+    }
+  }

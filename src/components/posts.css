@@ -1,0 +1,143 @@
+.posts {
+    margin: 1.6rem 0;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1.6rem;
+}
+
+.posts article {
+    background-color: var(--color-component);
+    display: flex;
+    flex-direction: row;
+    gap: 1.6rem;
+    padding: 1.6rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.posts article div:first-child img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.posts article > div:last-child {
+    position: relative;
+    display: grid;
+    grid-auto-flow: row;
+    gap: .8rem;
+    width: 100%;
+}
+
+.posts article div:last-child .user {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+}
+.posts article div:last-child .user {
+    width: 100%;
+    color: var(--color-text);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.posts article div:last-child .user p {
+    color: var(--color-text);
+}
+.posts article div:last-child .user span {
+    color: var(--color-text-variant);
+}
+
+.posts article div:last-child > p {
+    color: var(--color-text);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-top: .8rem;
+}
+
+.posts article div:last-child .more {
+    width: 3.6rem;
+    height: 3.6rem;
+    position: absolute;
+    right: -1.6rem;
+    top: -.8rem;
+    padding: .8rem;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--color-text-variant);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.posts article div:last-child .more:hover {
+    background-color: #28353E50;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.posts article div:last-child .media {
+    padding: .8rem 0;
+    width: 100%;
+}
+
+.posts article div:last-child .media img {
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    width: 100%;
+}
+
+.posts article div:last-child .actions {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1.6rem;
+}
+
+.posts article div:last-child .actions div {
+    background-color: var(--color-component-variant1);
+    padding: 1.2rem 1.6rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    font-size: 1.8rem;
+    color: var(--color-text-variant);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.posts article div:last-child .actions .comment-active {
+    color: var(--color-primary);
+}
+.posts article div:last-child .actions .retweet-active {
+    color: #00ba7c;
+}
+.posts article div:last-child .actions .like-active {
+    color: #F4245E;
+}
+.posts article div:last-child .actions div p {
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 500px) {
+    .posts article div:last-child .actions div {
+        padding: 0;
+        background-color: transparent;
+    }
+}
