@@ -120,56 +120,6 @@ const Feed = () => {
               </div>
             </div>
           </article>
-
-          <article>
-            <div>
-              <NavLink to="/profile" >
-                <div className='profile-img'>
-                    <img src={ImgUser3} alt="" />
-                </div>
-              </NavLink>
-            </div>
-
-            <div>
-              <div className="user">
-                <a href="">
-                  <p>Brais Moure</p>
-                </a>
-                <a href="">
-                  <span>@MoureDev</span>
-                </a>
-                <span>·</span>
-                <span>March 4</span>
-                <div className='more'>
-                  <FiMoreVertical />
-                </div>
-              </div>
-
-              <p>En unas horas en YouTube...</p>
-              
-              <div className='media'>
-                <img src={PostMedia2} alt="" />
-              </div>
-
-              <div className='actions'>
-                <div className='comment'>
-                  <BiComment />
-                  <p>5</p>
-                </div>
-                <div className='retweet'>
-                  <AiOutlineRetweet />
-                  <p>9</p>
-                </div>
-                <div className='like-active'>
-                  <AiOutlineHeart />
-                  <p>53</p>
-                </div>
-                <div className='share'>
-                  <FiShare />
-                </div>
-              </div>
-            </div>
-          </article>
         </div>
     </div>
   )
